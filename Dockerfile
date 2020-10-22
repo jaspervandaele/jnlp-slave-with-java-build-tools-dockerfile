@@ -16,4 +16,4 @@ RUN chmod 644 /usr/share/jenkins/agent.jar \
 
 USER ${user}
 
-ENTRYPOINT ["jenkins-agent"]
+ENTRYPOINT ["/opt/bin/entry_point.sh", "jenkins-agent"]
